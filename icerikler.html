@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İçerikler Kütüphanesi | PromptKüpü</title>
+    <meta name="description"
+        content="Runway, Midjourney, GitHub Copilot, ElevenLabs, Suno AI ve NotebookLM için hazır yapay zeka komutları ve kullanım rehberleri.">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Ana Stil Dosyası -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ortak Üst Menü (Header & Nav) -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-logo" aria-label="PromptKüpü Ana Sayfa">
+                <span class="logo-cube" aria-hidden="true">🧊</span>
+                <span class="logo-text">Prompt<span class="logo-accent">Küpü</span></span>
+            </a>
+            <nav class="main-nav" aria-label="Ana Menü">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                    <li><a href="icerikler.html" class="nav-link active" aria-current="page">İçerikler</a></li>
+                    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container page-main">
+        <!-- Sayfa Başlığı -->
+        <header class="page-header">
+            <span class="hero-badge">KOMUT & ARAÇ ARŞİVİ</span>
+            <h1 class="page-title">Yapay Zekâ Araçları ve Hazır Komutlar</h1>
+            <p class="page-description">Projelerinizde doğrudan kullanabileceğiniz, kategori bazlı optimize edilmiş
+                prompt şablonlarını inceleyin ve arayın.</p>
+        </header>
+
+        <!-- Arama Bölümü -->
+        <section class="search-area" aria-label="İçerik arama">
+            <label for="event-search" class="search-label">Yapay zekâ aracı veya prompt başlığına göre ara</label>
+            <div class="search-controls">
+                <input id="event-search" type="search" placeholder="Örnek: Instagram, Kod, Midjourney..."
+                    autocomplete="off">
+                <button id="clear-search" type="button">Temizle</button>
+            </div>
+            <p id="result-count" role="status" aria-live="polite">6 içerik gösteriliyor.</p>
+        </section>
+
+        <!-- Boş Sonuç Mesajı -->
+        <p id="empty-message" hidden>Aramanıza uygun içerik bulunamadı.</p>
+
+        <!-- İçerik Kartları (6 Zengin Kart) -->
+        <section id="event-list" class="grid" aria-label="Prompt ve Araç Kartları">
+
+            <!-- Kart 1 -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="category-badge badge-video">Video Üretimi</span>
+                    <span class="tool-name">Runway Gen-3 Alpha</span>
+                </div>
+                <h2>Runway Gen-3 ile Instagram Viral Video Üretimi</h2>
+                <p class="card-desc">
+                    Sosyal medya içerik üreticilerinin yüksek prodüksiyon maliyetleri ve ekipman ihtiyacı olmadan,
+                    izleyiciyi ilk 3 saniyede yakalayan dinamik, sinematik ve dikey (Reels/Shorts) videolar üretmesini
+                    sağlar.
+                </p>
+                <div class="prompt-box">
+                    <strong class="prompt-title">Örnek Prompt / Kullanım:</strong>
+                    <p class="prompt-code">"Dynamic FPV drone shot flying rapidly through a glowing cyberpunk street in
+                        Istanbul at dusk, neon signs reflecting on wet cobblestones, smooth camera transition into a
+                        cozy coffee shop, cinematic lighting, 4k resolution, hyper-realistic motion."</p>
+                </div>
+            </article>
+
+            <!-- Kart 2 -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="category-badge badge-image">Görsel Tasarım</span>
+                    <span class="tool-name">Midjourney v6</span>
+                </div>
+                <h2>Midjourney v6 Sinematik Fotogerçekçi Görsel Tasarımı</h2>
+                <p class="card-desc">
+                    Stok fotoğraf sitelerinde saatlerce görsel arama veya pahalı fotoğraf çekimleri yapma sorununu
+                    ortadan kaldırır. Işık, lens açısı ve doku detaylarıyla gerçeğinden ayırt edilemeyen konsept
+                    tasarımlar sunar.
+                </p>
+                <div class="prompt-box">
+                    <strong class="prompt-title">Örnek Prompt / Kullanım:</strong>
+                    <p class="prompt-code">"Close-up portrait of a futuristic software architect working on a
+                        holographic interface, dramatic rim lighting, shot on 85mm f/1.4 lens, shallow depth of field,
+                        ultra-detailed skin texture, cinematic color grading, Teal and Orange tones --ar 16:9 --v 6.0
+                        --style raw"</p>
+                </div>
+            </article>
+
+            <!-- Kart 3 -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="category-badge badge-code">Yazılım & Mimari</span>
+                    <span class="tool-name">GitHub Copilot</span>
+                </div>
+                <h2>GitHub Copilot ile Temiz Kod Mimari Kurulumu</h2>
+                <p class="card-desc">
+                    Yeni bir yazılım projesine başlarken oluşan spagetti kod karmaşasını ve tekrar eden (boilerplate)
+                    kod yazma yükünü çözer. SOLID prensiplerine uygun, bakımı kolay ve ölçeklenebilir bir temel kurar.
+                </p>
+                <div class="prompt-box">
+                    <strong class="prompt-title">Örnek Prompt / Kullanım:</strong>
+                    <p class="prompt-code">"@workspace Bir e-ticaret API'si için Clean Architecture ve SOLID
+                        prensiplerine uygun C# .NET Core katmanlı klasör yapısını (Domain, Application, Infrastructure,
+                        Presentation) oluştur. Ardından Repository Pattern kullanarak asenkron çalışan örnek bir
+                        ProductService sınıfı ve hata yönetimi (Global Exception Handling) ara katmanını yaz."</p>
+                </div>
+            </article>
+
+            <!-- Kart 4 -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="category-badge badge-audio">Ses Teknolojisi</span>
+                    <span class="tool-name">ElevenLabs</span>
+                </div>
+                <h2>ElevenLabs ile Gerçekçi Türkçe Seslendirme</h2>
+                <p class="card-desc">
+                    YouTube videoları, belgeseller veya eğitim içerikleri için profesyonel seslendirme sanatçısı ve
+                    stüdyo ekipmanı bulma zorluğunu aşar. Robotik tondan uzak, nefes ve duygu vurgularına sahip doğal
+                    Türkçe ses üretir.
+                </p>
+                <div class="prompt-box">
+                    <strong class="prompt-title">Örnek Prompt / Kullanım:</strong>
+                    <p class="prompt-code">"[Model: Eleven Multilingual v2 | Stability: %45 | Clarity: %80 | Style
+                        Exaggeration: %20] Metin: 'Teknolojinin sınırlarını zorladığımız bu yeni çağda... (kısa es)
+                        hayal gücünüz artık tek limitiniz. Gelin, geleceğin kodlarını birlikte yazalım.' (Derin, güven
+                        veren ve belgesel anlatıcısı tonunda okunacak)."</p>
+                </div>
+            </article>
+
+            <!-- Kart 5 -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="category-badge badge-music">Müzik & Ses</span>
+                    <span class="tool-name">Suno AI v3.5</span>
+                </div>
+                <h2>Suno AI ile Telifsiz Arka Plan Müziği</h2>
+                <p class="card-desc">
+                    Video içerik üreticilerinin ve oyun geliştiricilerinin en büyük kabusu olan telif hakkı (copyright
+                    strike) sorununu kökten çözer. Saniyeler içinde videonun ritmine özel, tamamen özgün enstrümantal
+                    parçalar besteler.
+                </p>
+                <div class="prompt-box">
+                    <strong class="prompt-title">Örnek Prompt / Kullanım:</strong>
+                    <p class="prompt-code">"[Instrumental Only] Chill lo-fi hip hop beat mixed with ambient synthwave,
+                        warm Rhodes piano chords, soft vinyl crackle in the background, relaxing bassline, 85 BPM, ideal
+                        for coding, studying and tech vlog background music, high fidelity studio mix."</p>
+                </div>
+            </article>
+
+            <!-- Kart 6 -->
+            <article class="card">
+                <div class="card-header">
+                    <span class="category-badge badge-study">Eğitim & Analiz</span>
+                    <span class="tool-name">Google NotebookLM</span>
+                </div>
+                <h2>NotebookLM ile PDF Notlarından Sesli Özet ve Video Üretimi</h2>
+                <p class="card-desc">
+                    Yüzlerce sayfalık akademik makaleleri, ders slaytlarını ve karmaşık PDF dökümanlarını saatlerce
+                    okuma yükünü ortadan kaldırır. Kaynakları analiz ederek sınav odaklı özetler, soru-cevap kartları ve
+                    podcast formatında sesli anlatımlar çıkarır.
+                </p>
+                <div class="prompt-box">
+                    <strong class="prompt-title">Örnek Prompt / Kullanım:</strong>
+                    <p class="prompt-code">"Yüklediğim 3 adet PDF ders notunu analiz et: 1) Sınavda çıkması en muhtemel
+                        10 temel kavramı gerçek hayat analojileriyle açıkla. 2) Konuyu iki sunucunun birbirine esprili
+                        ve akıcı şekilde anlattığı 5 dakikalık bir podcast/video senaryosu ve sesli özet (Audio
+                        Overview) yapısına dönüştür."</p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Ortak Alt Bilgi (Footer) -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="index.html" class="brand-logo">
+                    <span class="logo-cube" aria-hidden="true">🧊</span>
+                    <span class="logo-text">Prompt<span class="logo-accent">Küpü</span></span>
+                </a>
+                <p class="footer-tagline">Fikirlerinizi görsele, sese ve temiz koda dönüştüren yeni nesil başucu
+                    rehberi.</p>
+            </div>
+            <div class="footer-links">
+                <h3 class="footer-heading">Hızlı Erişim</h3>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="icerikler.html">İçerikler Kütüphanesi</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 PromptKüpü. Üniversite Web Tasarımı Projesi kapsamında saf HTML5, CSS3 ve Vanilla JS ile
+                geliştirilmiştir.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bağlantısı -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
